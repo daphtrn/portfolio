@@ -1,0 +1,701 @@
+/* ----- parent code -----*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Outfit", sans-serif;
+    color:#2C2C2C;
+    background-color: #F8F8F8;
+    margin: 24px;
+}
+
+.menuIcon{
+    font-size: 32px;
+    color: #2C2C2C;
+    margin-top:20px;
+    margin-bottom: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul a{
+    text-decoration: none;
+
+}
+
+nav ul li ul{
+    display: block;
+    background-color: #dedede;
+    position: absolute;
+    right:48px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    padding-left: 26px;
+    padding-right: 30px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 4px 0px rgba(125,125,125,1);
+    -moz-box-shadow: 0px 3px 4px 0px rgba(125,125,125,1);
+    box-shadow: 0px 3px 4px 0px rgba(125,125,125,1);
+    opacity: 0;
+    transition:opacity 0.3s ease;
+    z-index: 1;
+}
+
+nav ul li:hover ul{
+    right:48px;
+    opacity: 1;
+}
+
+nav ul li ul a{
+    display:block;
+    font-size: 20px;
+    color: #2C2C2C;
+    padding: 10px;
+    transition:0.3s ease;
+}
+
+nav ul li ul a:hover{
+    background-color: #7CB1C8;
+    border-radius: 30px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+p{
+    font-size: 20px;
+}
+
+.menuHeader{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+#daphneNav{
+    margin-top: 24px;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    color:#2C2C2C;
+}
+
+.daphneHeader{
+    display:flex;
+    flex-direction: column;
+}
+
+.daphneHeader img{
+    order:1;
+    margin-top:24px;
+    margin-bottom:0;
+}
+
+
+/* ----- homepage ----- */
+
+.hi{
+    display:flex;
+    justify-content: center;
+}
+
+.hi2{
+    order:2;
+}
+
+.hi2 p{
+    margin:0;
+}
+
+#daphne{
+    background: -webkit-linear-gradient(#c2e1c2, #7cb1c8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 8px;
+}
+
+header h1{
+    text-align: center;
+    margin-top: 32px;
+}
+
+header p{
+    text-align: center;
+}
+
+header img{
+    max-width: 60%;
+    display: block;
+    height: auto;
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+
+#work1, #work3{
+    display:block;
+    background-color: rgb(194, 225, 194,0.5);
+    margin-left:-24px;
+    margin-right:-24px;
+    text-decoration: none;
+    color:#2C2C2C;
+    transition:0.3s ease;
+}
+
+#work1:hover, #work3:hover{
+    background-color: #c2e1c2;
+}
+
+#work2{
+    display:block;
+    background-color: rgb(124, 177, 200, 0.5);
+    margin-left:-24px;
+    margin-right:-24px;
+    text-decoration: none;
+    color:#2C2C2C;
+    transition:0.3s ease;
+}
+
+#work2:hover{
+    background-color: #7CB1C8;
+}
+
+#work1 h1, #work2 h1, #work3 h1{
+    margin-top: 96px;
+    margin-bottom: 32px;
+    padding-top: 40px;
+    font-size: 28px;
+    text-align: center;
+}
+
+#work1 img, #work3 img{
+    max-width: 85%;
+    justify-content: center;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    transition:0.3s ease;
+}
+
+#work2 img{
+    max-width: 85%;
+    justify-content: center;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    transition:0.3s ease;
+}
+
+#work1:hover img, #work3:hover img{
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(91,115,91,1);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(91,115,91,1);
+    box-shadow: 0px 2px 4px 0px rgba(91,115,91,1);
+}
+
+#work2:hover img{
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(49,76,87,1);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(49,76,87,1);
+    box-shadow: 0px 2px 4px 0px rgba(49,76,87,1);
+}
+
+#work1 p, #work2 p, #work3 p{
+    padding-bottom: 40px;
+    padding-top: 8px;
+    margin-left:32px;
+    margin-right:32px;
+}
+
+
+/* ----- about page ----- */
+.aboutTitle{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#me{
+    background: -webkit-linear-gradient(#c2e1c2, #7cb1c8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 8px;
+}
+
+#me2{
+    display:flex;
+    justify-content: center;
+}
+
+#picofme{
+    border-radius: 10px;
+}
+
+.aboutMe1 p{
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 16px;
+    text-align: left;
+}
+
+.aboutMe2 p{
+    display:none;
+}
+
+.aboutOther h2{
+    text-align: center;
+    margin-top: 64px;
+}
+
+.aboutOther img{
+    width: 70%;
+    margin: 24px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.craftDiv, .dragonboatDiv, .foodDiv{
+    position: relative;
+    display: inline-block;
+}
+
+#craftOverlay, #dragonboatOverlay, #foodOverlay{
+    position: absolute;
+    top:0;
+    left:15%;
+    opacity:0;
+    transition:opacity 0.3s ease;
+}
+
+.craftText, .dragonboatText, .foodText{
+    position:absolute;
+    text-align: center;
+    top:45%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:#2C2C2C;
+    opacity:0;
+    line-height: 1.5;
+}
+
+.craftText a, .dragonboatText a{
+    display:flex;
+    background-color: #F8F8F8;
+    margin-top: 40px;
+    padding: 10px;
+    text-decoration: none;
+    color: #2C2C2C;
+    font-size: 16px;
+    font-weight: 500;
+    line-height:1;
+    border-radius:40px;
+    align-items: center;
+    text-align: left;
+}
+
+.craftText a:hover{
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(91,115,91,1);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(91,115,91,1);
+    box-shadow: 0px 2px 4px 0px rgba(91,115,91,1);
+}
+
+.dragonboatText a:hover{
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(49,76,87,1);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(49,76,87,1);
+    box-shadow: 0px 2px 4px 0px rgba(49,76,87,1);
+}
+
+.craftText a img{
+    width:20%;
+    margin: 0;
+    margin-right:10px;
+    margin-left: 5px;
+}
+
+.dragonboatText a i{
+    font-size: 32px;
+    margin-right: 10px;
+    margin-left:5px;
+    align-items: center;
+}
+
+.craftDiv:hover #craftOverlay, .dragonboatDiv:hover #dragonboatOverlay, .foodDiv:hover #foodOverlay{
+    opacity:1;
+}
+
+.craftDiv:hover .craftText, .dragonboatDiv:hover .dragonboatText, .foodDiv:hover .foodText{
+    opacity:1;
+}
+
+
+/* ----- general case study code ----- */
+.DADmenuHeader, .grubmenuHeader, .seniormenuHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 28px;
+    padding-left:52px;
+    padding-right:52px;
+}
+
+.afterdarkHeader, .grubHeader, .seniorHeader{
+    padding-bottom: 1px;
+    margin-bottom: 40px;
+}
+
+.afterdarkHeader h1, .seniorHeader h1{
+    font-size: 36px;
+}
+
+.afterdarkHeader a, .grubHeader a, .seniorHeader a{
+    display: inline-block;
+    background-color: #2C2C2C;
+    padding: 15px;
+    text-decoration: none;
+    color: #F8F8F8;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius:40px;
+    margin-bottom: 32px;
+}
+
+.afterdarkHeader a:hover, .seniorHeader a:hover{
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(91,115,91,1);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(91,115,91,1);
+    box-shadow: 0px 2px 4px 0px rgba(91,115,91,1);
+}
+
+.grubHeader a:hover{
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(49,76,87,1);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(49,76,87,1);
+    box-shadow: 0px 2px 4px 0px rgba(49,76,87,1);
+}
+
+.afterdarkHeader img, .grubHeader img, .seniorHeader img{
+    width: 80%;
+    margin: 16px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+}
+
+.afterdarkStatement p, .grubStatement p, .seniorStatement p{
+    line-height: 1.7;
+    margin: 16px;
+    padding-bottom: 16px;
+}
+
+
+/* ----- davis after dark/kalanchoe senior center case study ----- */
+.afterdarkMenu, .seniorMenu{
+    display: block;
+    background-color: #c2e1c2;
+    margin: -24px;
+}
+
+.afterdarkHeader, .seniorHeader{
+    display: block;
+    text-align: center;
+    background-color: #c2e1c2;
+    margin-left: -24px;
+    margin-right: -24px;
+}
+
+
+/* ----- givemegrub case study ----- */
+.grubMenu{
+    display: block;
+    background-color: #7CB1C8;
+    margin: -28px;
+}
+
+.grubHeader{
+    display: block;
+    text-align: center;
+    background-color: #7CB1C8;
+    margin-left: -24px;
+    margin-right: -24px;
+}
+
+
+/* ----- footer ----- */
+footer{
+    text-align: center;
+}
+
+footer h3{
+    margin-top: 80px;
+    margin-bottom: -10px;
+}
+
+#connectIcons{
+    font-size:32px;
+} 
+
+#connectIcons a{
+    padding: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+    text-decoration: none;
+    color: #2C2C2C;
+    transition:0.3s ease;
+}
+
+#connectIcons a:hover{
+    border-radius: 80px;
+    background-color: #7CB1C8;
+}
+
+#footerNote{
+    margin: 40px;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 600px){
+
+    /* ----- index ----- */
+    body{
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #daphneNav{
+        margin-top:40px;
+    }
+
+    .menuIcon i{
+        right: 0;
+        display:none;
+    }
+
+    nav ul li ul{
+        position: relative;
+        right:0;
+        opacity: 1;
+        display:flex;
+        padding:0;
+        margin-top:32px;
+        background-color: #F8F8F8;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(125,125,125,1);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(125,125,125,1);
+        box-shadow: 0px 0px 0px 0px rgba(125,125,125,1);
+    }
+
+    nav ul li:hover ul{
+        right:0;
+        opacity: 1;
+    }
+
+    nav ul li ul a{
+        margin-left: 10px;
+        margin-right: 10px;
+        padding:12px;
+    }
+
+    .daphneHeader{
+        flex-direction: row;
+        margin-top:48px;
+        margin-bottom:144px;
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+
+    .daphneHeader img{
+        width:35%;
+        order: 1;
+        margin-left: 0;
+        margin-right: 120px;
+
+    }
+
+    .daphneHeader h1{
+        order:2;
+    }
+
+    .daphneHeader p{
+        order:3;
+    }
+
+    .hi{
+        justify-content: left;
+        text-align: left;
+    }
+
+    .hi h1{
+        font-size: 52px;
+    }
+
+    #daphne{
+        margin-left:10px;
+    }
+
+    .hi2{
+        margin-top:auto;
+        margin-bottom:auto;
+        justify-content: left;
+    }
+
+    .hi2 p{
+        text-align: left;
+        font-size:24px;
+    }
+
+    #work1, #work2, #work3{
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding-top: 64px;
+        margin: 16px 24px 56px 24px;
+    }
+
+    #work1 h1, #work2 h1, #work3 h1{
+        order:2;
+        text-align: left;
+        font-size: 35px;
+        margin:0;
+        margin-left: 72px;
+    }
+
+    #work1 img, #work2 img, #work3 img{
+        margin-bottom: 0;
+        order:1;
+    }
+
+    #work1 p, #work2 p, #work3 p{
+        order: 3;
+        text-align: left;
+        margin:0;
+        margin-top:8px;
+        margin-bottom: 16px;
+        margin-left: 72px;
+    }
+
+
+    /* ----- afterdark ----- */
+
+
+    #afterdarkNav, #seniorNav{
+        background-color: #c2e1c2;
+        margin-right: 345px;
+    }
+
+    #grubNav{
+        background-color: #7CB1C8;
+        margin-right: 345px;
+    }
+
+    #afterdarkNav a:hover, #grubNav a:hover, #seniorNav a:hover{
+        background-color: #F8F8F8;
+    }
+
+    .afterdarkMenu, .grubMenu, .seniorMenu{
+        margin-left: -345px;
+        margin-right: -345px;
+    }
+
+    .afterdarkHeader, .grubHeader, .seniorHeader{
+        margin-left: -345px;
+        margin-right: -345px;
+    }
+
+    .afterdarkHeader img, .grubHeader img, .seniorHeader img{
+        width:40%;
+        margin:48px auto 48px auto;
+    }
+
+    .afterdarkHeader a, .grubHeader a, .seniorHeader a{
+        font-size:18px;
+    }
+
+    .DADmenuHeader #daphneNav, .grubmenuHeader #daphneNav, .seniormenuHeader #daphneNav{
+        margin-left: 345px;
+    }
+
+    .afterdarkDiv a, .grubDiv a, .seniorDiv a{
+        margin-bottom: 48px;
+    }
+
+    .afterdarkStatement, .grubStatement, .seniorStatement{
+        margin-top:64px;
+    }
+
+
+    /* ----- about me ----- */
+    .aboutDiv{
+        display:flex;
+        margin-top: 48px;
+    }
+
+    .aboutTitle{
+        order:1;
+    }
+
+    #picofme{
+        width:30%;
+        margin:24px;
+        margin-right:48px;
+    }
+
+    #me2{
+        justify-content: left;
+        margin-left:16px;
+    }
+
+    .aboutTitle h1{
+        font-size:45px;
+        margin-bottom: 24px;
+        margin-top:8px;
+    }
+
+    .aboutMe2 p{
+        display:inherit;
+        font-size: 18px;
+        line-height: 1.7;
+        margin: 16px;
+        text-align: left;
+    }
+
+    .aboutMe1 p{
+        display:none;
+    }
+
+    .aboutOther{
+        margin-top:104px;
+    }
+
+    #outside{
+        font-size: 32px;
+    }
+
+    #hobbypics{
+        display:flex;
+    }
+
+    .craftDiv, .dragonboatDiv, .foodDiv{
+        flex:1;
+    }
+}
