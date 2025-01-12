@@ -14,7 +14,7 @@
 
     <link href="style.css" rel="stylesheet">
 
-    <title>Interactive Narrative Project: Portfolio -  GiveMeGrub Case Study</title>
+    <title>LingoHero</title>
 </head>
 <body>
     <header class="grubMenu">
@@ -35,36 +35,340 @@
         </div>
     </header>
 
-    <div class="grubHeader">
-        <h1>GiveMeGrub</h1>
-        <div class="grubDiv">
-            <img src="images/grub.png" alt="GiveMeGrub mockup">
-            <a href="https://www.figma.com/proto/76JelGkc86biZ6PGtwGCpm/des112-p2?node-id=5-6&t=nP1FDXtW0A3sLQP4-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=5%3A6">View Prototype</a>
+    <main id="LHmain">
+        <div class="grubHeader">
+            <h1>LingoHero</h1>
+            <div class="grubDiv">
+                <img src="images/grub.png" alt="GiveMeGrub mockup">
+            </div>
         </div>
-    </div>
 
-    <article class="grubStatement">
-        <p>
-            <b>Challenge Statement:</b><br>
-            Create an app for college students that centralizes information related to food accessibility services.
-        </p>
+        <section class="grubStatement">
+            <div class="overview">
+                <div>
+                    <p class="overviewTitles">Role</p>
+                    <p>UI/UX Designer</p>
+                </div>
 
-        <p>
-            <b>Solution Statement:</b><br>
-            College students are usually quite busy and have schedules that don’t always lend itself to being available during usual business hours. This may cause problems with accessing food pantries, or similar organizations if they’re open during usual working hours. College students’ goals are to study and become career ready, and may not always have time to work for money to buy necessities. This also may also cause these students to not have the time or money to buy/make healthy foods. 
-        </p>
-        <p>
-            A few features I plan to include are; a place to receive updates on favorite locations and things that are going on in the community (user posts), a search feature to find specifically what you are looking for, and an explore page for users looking for something new. I wanted the app to look quite friendly, so I used a fun color palette along with a cute egg character. I also wanted it to be easy to navigate for college students in specific, so I made a lot of features similar to that of other social media. 
-        </p>
-    </article>
+                <div>
+                    <p class="overviewTitles">Team</p>
+                    <p>1 Lead Designer, 4 Designers</p>
+                </div>
+
+                <div>
+                    <p class="overviewTitles">Timeline</p>
+                    <p>June - September 2024</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="LHpromptGoal">
+            <div>
+                <h3>Overview</h3>
+                <p>LingoHero is seeking to bring a fun, story-based game to the language learning market. As the first-round of designers, the design team was tasked with setting-up many of the foundational features of the app. We also worked very closely with the rest of the creative team (2D Artists and Content & Narrative) to maintain a consistent vision for LingoHero.</p>
+                <p><b>Note:</b> This project is still under construction!</p>
+            </div>
+
+            <div class="caseFlex">
+                <div>
+                    <h3>Goal</h3>
+                    <p>Create features outside the main game that best address users’ individual learning goals, as well as motivate them to continue using the app consistently.</p>
+                </div>
+                <div>
+                    <h3>My Role</h3>
+                    <p>I worked primarily on the user survey (creating questions and collecting responses), as well as the guild feature.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="subsectionMargins" id="LHresearch">
+            <h2 class="LHsubheading">Research</h2>
+            <p>Going into research, it was important for us to keep in mind that our insights would not only be used to help <b>inform our design decisions</b>, but would also be helpful to the <b>entire creative team.</b></p>
+
+            <div class="caseFlex">
+                <div id="LHresearchGoals">
+                    <h3>Research Goals</h3>
+                    <ul>
+                        <li>What engages and <b>motivates</b> users to continue learning?</li>
+                        <li>What causes users to <b>lose motivation</b> or stop learning?</li>
+                        <li>How important do users think <b>culture</b> is in their language learning?</li>
+                        <li>How practical is learning language through applications in the <b>real-world?</b></li>
+                    </ul>
+                </div>
+                <div id="LHresearchMethods">
+                    <h3>Research Methods</h3>
+                    <ul>
+                        <li>Competitive Analysis</li>
+                        <li>Literature Review</li>
+                        <li>User Survey</li>
+                        <li>User Interviews</li>
+                        <li>User Personas</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsectionMargins">
+                <h3>Competitive Analysis</h3>
+                <p><b>Duolingo</b> is the most used language learning app, especially amoung casual learners. <b>Babbel</b> is a popular option for more serious language learners.</p>
+                <img id="LHcompApps" src="images/LHcompanalysis.png" alt="LingoHero competitive analysis">
+                <p><b>Key takeaway:</b> Users prioritize personalization and real-world application.</p>
+            </div>
+
+            <div class="subsectionMargins">
+                <h3>Literature Review</h3>
+                <p>Our team had no previous experience with game design, so we wanted to focus our research on exactly that. More specifically, we researched the common ways that mobile game designers <b>increase user retention</b>, and the <b>preferences</b> of users who play mobile games.</p>
+                <div id="LHlitreview">
+                    <p><b>Providing Purpose</b></p>
+                    <ul>
+                        <li>Collecting achievements, coins, badges</li>
+                        <li>Daily challenges/streaks promotes daily use</li>
+                        <li>Give users an end goal outside of language learning to work towards</li>
+                    </ul>
+                    <p><b>Personalization</b></p>
+                    <ul>
+                        <li>Users really value personalization and options</li>
+                        <li>Different learning modes/difficulties</li>
+                        <li>Opting in/out of certain exercises and notifications</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsectionMargins">
+                <h3>User Survey</h3>
+                <p>Through our survey, we hoped to gain more perspective on <b>who</b> generally use language learning apps, as well as their <b>motives and preferences.</b></p>
+                <div class="caseFlex" id="LHsurveyResults">
+                    <div class="LHsurveyResultsDiv">
+                        <p><b>Our Respondents</b></p>
+                        <ul>
+                            <li><b>46</b> total respondents</li>
+                            <li>76.1% either work or go to school <b>full-time</b></li>
+                            <li>87% are <b>adults</b> that are 19-65 years old</li>
+                        </ul>
+                    </div>
+                    <div class="LHsurveyResultsDiv">
+                        <p><b>The Results</b></p>
+                        <ul>
+                            <li>Even spread between <b>how often</b> apps are used amoung respondents (everyday, every once in a while, and never)</li>
+                            <li>Split preference for studying <b>alone vs. with others</b></li>
+                            <li>Want more <b>conversational</b> learning features</li>
+                            <li><b>Fun</b> is a very strong motivator for learning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsectionMargins">
+                <h3>User Interviews</h3>
+                <p>We wanted to gain a deeper understanding of our <b>user survey results</b> by conducting user interviews.</p>
+                <img id="LHuserinterviews" src="images/LHuserinterviews.png" alt="LingoHero Interviews">
+                <p><b>Key takeaway:</b> Further emphasized the demand of real-world practicality, and creating a more stress-free learning experience.</p>
+            </div>
+
+            <div class="subsectionMargins">
+                <h3>User Personas</h3>
+                <p>We created two user personas for a more <b>generalized</b> view of the user research we had collected thus far.</p>
+                <img id="LHuserpersonas" src="images/LHuserpersonas.png" alt="LingoHero User Personas">
+                <p>Alex is a high school student that is looking to learn Spanish <b>outside of classes at school.</b></p>
+                <p>Sarah is looking to learn German in a <b>fun and time efficient way</b>, with the goal of visiting Germany again with better language skills.</p>
+            </div>
+
+            <div class="subsectionMargins" id="LHinsights">
+                <h3>Research Insights</h3>
+                <p>At the end of our research, we were able to determine what our areas of focus would be going into the rest of the project.</p>
+                <p><b>Increasing Retention</b></p>
+                <ul>
+                    <li>Incentives (achievements, coins, character customization)</li>
+                    <li>Offering many game options</li>
+                </ul>
+                <p><b>Improving Learning Experience</b></p>
+                <ul>
+                    <li>Options for personalization</li>
+                    <li>Prioritize conversational/real-world application</li>
+                    <li>Constructive feedback on mistakes/not punishing mistakes</li>
+                    <li>Learning about culture alonside language</li>
+                    <li>Tracking progress and reviewing material</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="LHideation">
+            <h2 class="LHsubheading">Ideation/Lo-fi Sketches</h2>
+            <p>During ideation, we made sure to brainstorm features that would <b>best address the concerns</b> we discovered in our research.</p>
+            <img src="images/LHideation.png" alt="LingoHero ideation sketches">
+        </section>
+
+        <section id="LHmidfi">
+            <h2 class="LHsubheading">Mid-Fi</h2>
+            <p>Moving into mid-fi screens, we made adjustments to our lo-fi sketches to stay <b>consistent</b> with the work Content & Narrative had completed. We also began using assests from our 2D artists, which helped us maintain a <b>coherent style.</b></p>
+            <img id="LHmidfiImage" src="images/LHmidfis.png" alt="LingoHero Mid-Fi">
+        </section>
+
+        <section id="LHhifi">
+            <h2 class="LHsubheading">Hi-Fi & Final Prototypes</h2>
+
+            <div class="subsectionMargins">
+                <h3>Design System</h3>
+                <p>Our design system is <b>heavily influenced by the assests created by our 2D artists.</b> We stayed true to their purple and yellow color palette, and chose fonts that gave off a "fun and cute" vibe to match the style of the drawings.</p>
+                <img id="LHdesignsystem" src="images/LHdesignsystem.png" alt="Design system">
+            </div>
+
+            <div id="LHfinalPrototypes" class="subsectionMargins">
+                <h2>Final Prototypes</h2>
+                <div class="LHhifivideos">
+                    <div>
+                        <h4>Onboarding</h4>
+                        <ul>
+                            <li>Character selection</li>
+                            <li>Set language learning goals</li>
+                            <li>Choose how often you want to learn</li>
+                            <li>Turn on/off notifications and streak tracking</li>
+                        </ul>
+                    </div>
+                    <div class="LHhifivideosSpace">
+                        <video height="512px" width="288px" autoplay loop muted>
+                            <source src="images/LHonboarding.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div id="LHhifiChat">
+                    <div id="DADchatText">
+                        <h4>Homepage & Inbox</h4>
+                        <ul>
+                            <li>Language learning path on homepage</li>
+                            <li>Send and receive messages from other users</li>
+                            <li>Practice conversational skills with suggested prompts</li>
+                        </ul>
+                    </div>
+                    <div class="LHhifivideosSpace" id="DADchatFlex">
+                        <img id="DADhifiImg2" src="images/homeHifi.png" alt="Davis After Dark chat page" height="512px" width="280px">
+                        <video height="512px" width="288px" autoplay loop muted>
+                            <source src="images/LHinbox.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div id="choosingFilters">
+                    <h4>Guild</h4>
+                    <div class="LHhifivideosSpace" id="LHfilterFlex">
+                        <div>
+                            <video height="512px" width="288px" autoplay loop muted>
+                                <source src="images/LHguild.mp4" type="video/mp4">
+                            </video>
+                            <p>Join a guild or create your own</p>
+                            <p>View guild stats</p>
+                            <p>Receive guild related notifications</p>
+                            <p>Make changes to your existing guild</p>
+                        </div>
+                        <div>
+                            <video height="512px" width="288px" autoplay loop muted>
+                                <source src="images/LHguilddiscuss.mp4" type="video/mp4">
+                            </video>
+                            <p>View and participate in existing discussion posts</p>
+                            <p>Start your own discussion with other guild members</p>
+                            <p>Earn coins for participation</p>
+                        </div>
+                        <div>
+                            <video height="512px" width="288px" autoplay loop muted>
+                                <source src="images/LHguildquests.mp4" type="video/mp4">
+                            </video>
+                            <p>Join guild quests with other members</p>
+                            <p>Work together to earn rewards and coins</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="LHprofile">
+                    <h4>Profile Page</h4>
+                    <div class="LHhifivideosSpace" id="LHprofileFlex">
+                        <div>
+                            <video height="512px" width="288px" autoplay loop muted>
+                                <source src="images/LHprofile.mp4" type="video/mp4">
+                            </video>
+                            <p>Review learning/game progress</p>
+                            <p>View achievements</p>
+                            <p>Change notification settings and preferred question type</p>
+                        </div>
+                        <div>
+                            <video height="512px" width="288px" autoplay loop muted>
+                                <source src="images/LHalbum.mp4" type="video/mp4">
+                            </video>
+                            <p>Look back on photos, Lingomons, and characters collected from each region in the game</p>
+                        </div>
+                        <div>
+                            <video height="512px" width="288px" autoplay loop muted>
+                                <source src="images/LHfriends.mp4" type="video/mp4">
+                            </video>
+                            <p>Find friends or see existing ones</p>
+                            <p>View your friends' profiles</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="LHhifivideos">
+                    <div>
+                        <h4>Character Customization</h4>
+                        <ul>
+                            <li>Edit, add, or put on outfit presets</li>
+                            <li>Look through your existing wardrobe items</li>
+                            <li>Use earned coins to buy new wardrobe items</li>
+                        </ul>
+                    </div>
+                    <div class="LHhifivideosSpace" id="DADchatFlex">
+                        <img id="DADhifiImg2" src="images/charactercustomization.png" alt="Davis After Dark chat page" height="512px" width="280px">
+                        <video height="512px" width="288px" autoplay loop muted>
+                            <source src="images/LHrewardshop.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsectionMargins" id="LHhifiTest">
+                <h3>Hi-Fi Usability Testing</h3>
+                <div>
+                    <ul>
+                        <li>Keep the design system consistent</li>
+                        <li>Make the UI feel more "game-like"</li>
+                        <li>Add more division between elements to reduce cognitive overload</li>
+                        <li>Make buttons more mobile-friendly</li>
+                        <li>Add "time spent" goal for each day to improve app retention and increase daily usage</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="subsectionMargins" id="LHreflection">
+            <h2 class="LHsubheading">Reflection</h2>
+            <div id="DADconclusion">
+                <div class="caseFlex">
+                    <div id="LHchallenges">
+                        <h3>Challenges</h3>
+                        <ul>
+                            <li>Working on a mobile game for the first-time</li>
+                            <li>Clearly communicating ideas to non-designers, and defending our design choices</li>
+                            <li>Maintaining a consistent vision for the game within the creative team, and making sure our work aligned with their work</li>
+                        </ul>
+                    </div>
+
+                    <div id="LHnextsteps">
+                        <h3>Next Steps</h3>
+                        <ul>
+                            <li>Implementing comments from the usability test, and conducting another round.</li>
+                            <li>Meet periodically with future developers and designers to clear confusion and continue progress.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <footer>
             <h3>Let's connect!</h3>
             <p id="connectIcons">
                 <a href="mailto:&#100;&#103;&#116;&#114;&#097;&#110;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;" class="far fa-envelope"></a>
-                <a href="www.linkedin.com/in/daphne-tran-4b2670184" class="fab fa-linkedin"></a>
+                <a href="https://www.linkedin.com/in/daphne-tran-4b2670184/" class="fab fa-linkedin"></a>
             </p>
             <p id="footerNote">Made with &lt;3 by Daphne</p>
         </footer>
+    </main>
 </body>
 </html>

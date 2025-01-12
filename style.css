@@ -77,17 +77,17 @@ h1{
 }
 
 h2{
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 38px;
+    font-weight: 650;
 }
 
 h3{
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
 }
 
 p{
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .menuHeader{
@@ -157,23 +157,19 @@ header img{
     margin-bottom: 32px;
 }
 
-#work1, #work3{
+#work1{
     display:block;
-    background-color: rgb(194, 225, 194,0.5);
+    background-color: rgba(193,174,249,0.4);
     margin-left:-24px;
     margin-right:-24px;
     text-decoration: none;
     color:#2C2C2C;
     transition:0.3s ease;
-}
-
-#work1:hover, #work3:hover{
-    background-color: #c2e1c2;
 }
 
 #work2{
     display:block;
-    background-color: rgb(124, 177, 200, 0.5);
+    background-color: rgba(255,175,56,0.4);
     margin-left:-24px;
     margin-right:-24px;
     text-decoration: none;
@@ -181,8 +177,14 @@ header img{
     transition:0.3s ease;
 }
 
-#work2:hover{
-    background-color: #7CB1C8;
+#work3{
+    display:block;
+    background-color: rgba(133,207,221,0.4);
+    margin-left:-24px;
+    margin-right:-24px;
+    text-decoration: none;
+    color:#2C2C2C;
+    transition:0.3s ease;
 }
 
 #work1 h1, #work2 h1, #work3 h1{
@@ -193,32 +195,30 @@ header img{
     text-align: center;
 }
 
-#work1 img, #work3 img{
+#work1 img, #work2 img, #work3 img{
     max-width: 85%;
     justify-content: center;
     margin-bottom: 8px;
     border-radius: 10px;
     transition:0.3s ease;
+}
+
+#work1 img{
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(32,26,51,0.25);
+    -moz-box-shadow: 0px 0px 15px 3px rgba(32,26,51,0.25);
+    box-shadow: 0px 0px 15px 3px rgba(32,26,51,0.25);
 }
 
 #work2 img{
-    max-width: 85%;
-    justify-content: center;
-    margin-bottom: 8px;
-    border-radius: 10px;
-    transition:0.3s ease;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(145,102,37,1);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(145,102,37,1);
+    box-shadow: 0px 0px 15px 0px rgba(145,102,37,1);
 }
 
-#work1:hover img, #work3:hover img{
-    -webkit-box-shadow: 0px 2px 4px 0px rgba(91,115,91,1);
-    -moz-box-shadow: 0px 2px 4px 0px rgba(91,115,91,1);
-    box-shadow: 0px 2px 4px 0px rgba(91,115,91,1);
-}
-
-#work2:hover img{
-    -webkit-box-shadow: 0px 2px 4px 0px rgba(49,76,87,1);
-    -moz-box-shadow: 0px 2px 4px 0px rgba(49,76,87,1);
-    box-shadow: 0px 2px 4px 0px rgba(49,76,87,1);
+#work3 img{
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(66,119,129,1);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(66,119,129,1);
+    box-shadow: 0px 0px 15px 0px rgba(66,119,129,1);
 }
 
 #work1 p, #work2 p, #work3 p{
@@ -267,6 +267,11 @@ header img{
 .aboutOther h2{
     text-align: center;
     margin-top: 64px;
+}
+
+.aboutOutside{
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .aboutOther img{
@@ -352,6 +357,155 @@ header img{
 
 
 /* ----- general case study code ----- */
+.overview{
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview div{
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.overview div p{
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.overviewTitles{
+    font-weight: 700;
+}
+
+#DADmain, #LHmain{
+    line-height: 1.6rem;
+}
+
+#DADmain h3{
+    font-size: 22px;
+    color: #40268B;
+}
+
+#LHmain h3{
+    font-size: 22px;
+    color: #814D00;
+}
+
+#DADmain h4, #LHmain h4{
+    font-size: 22px;
+    font-weight: 600;
+    color: #2C2C2C;
+    margin-top: 20px;
+}
+
+#DADmain #connectIcons, #LHmain #connectIcons{
+    font-size: 32px;
+}
+
+#DADmain p, #LHmain p{
+    font-size: 17px;
+}
+
+.subsectionMargins{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#DADuserpersonas, #DADmidfiImage, #DADdesignsystem, #DADuserinterviews, #DADcompApps, #DADideation img, #DADresearchpic, #LHuserinterviews, #LHideation img, #LHmidfiImage, #LHuserpersonas, #LHcompApps{
+    border-radius: 10px;
+}
+
+#DADresearchpic{
+    margin-top: 50px;
+}
+
+#DADresearchGoals, #DADresearchMethods, #DADinsights, #DADgoodtest, #DADbadtest{
+    border: 2px #C1AEF9 solid;
+    border-radius: 10px;
+    padding: 10px 36px 16px 36px;
+}
+
+#LHresearchGoals, #LHresearchMethods, #LHinsights, #LHlitreview, #LHsurveyResults div{
+    border: 2px rgb(255,175,56) solid;
+    border-radius: 10px;
+    padding: 10px 36px 16px 36px;
+}
+
+#LHlitreview p{
+    margin-bottom: -5px;
+}
+
+#DADdefine p{
+    margin-top: 10px;
+    border: 2px #C1AEF9 solid;
+    border-radius: 10px;
+    padding: 24px 36px 24px 36px;
+}
+
+#DADresearchGoals, #LHresearchGoals{
+    flex: 2;
+    margin-bottom: 30px;
+}
+
+#DADresearchMethods, #LHresearchMethods, #DADgoodtest, #DADbadtest{
+    flex: 1;
+}
+
+#DADresearchGoals li, #DADresearchMethods li, #DADinsights li, #DADmidfiTest li, #DADgoodtest li, #DADbadtest li, #LHresearchGoals li, #LHresearchMethods li, #LHinsights li, #LHhifiTest li, #LHlitreview li, #LHsurveyResults li, #DADchallenges li, #DADnextsteps li, #LHchallenges li, #LHnextsteps li{
+    font-size: 17px;
+    line-height: 2em;
+}
+
+#DADsurveyResults div{
+    border: 2px #C1AEF9 solid;
+    border-radius: 10px;
+}
+
+#DADsurveyResults p{
+    padding: 4px 24px 4px 24px;
+}
+
+.DADsurveyResultsDiv, .LHsurveyResultsDiv{
+    margin-bottom: 30px;
+}
+
+#DADmidfiTest h3,#LHhifiTest h3{
+    margin-bottom: 20px;
+}
+
+#DADfinalPrototypes h2{
+    color: #40268B;
+    margin-top: 70px;
+}
+
+#LHfinalPrototypes h2{
+    color: #814D00;
+    margin-top: 70px;
+}
+
+.DADhifivideosSpace video, .LHhifivideosSpace video{
+    justify-content: center;
+}
+
+.DADhifivideos li, .LHhifivideos li, #DADhifiChat li, #LHhifiChat li{
+    font-size: 18px;
+    line-height: 2em;
+}
+
+#DADhifiImg1{
+    max-height: 512px;
+    max-width: 260px;
+}
+
+#DADhifiImg2{
+    max-height: 512px;
+    width: 280px;
+}
+
+#choosingFilters, #LHprofile{
+    margin-top: 50px;
+}
+
 .DADmenuHeader, .grubmenuHeader, .seniormenuHeader{
     display: flex;
     justify-content: space-between;
@@ -361,7 +515,6 @@ header img{
 }
 
 .afterdarkHeader, .grubHeader, .seniorHeader{
-    padding-bottom: 1px;
     margin-bottom: 40px;
 }
 
@@ -408,18 +561,62 @@ header img{
     padding-bottom: 16px;
 }
 
+#DADresearch, #DADdefine, #DADideation, #DADmidfi, #DADhifi, #DADreflection, #DADresearch, #LHideation, #LHmidfi, #LHhifi, #LHreflection{
+    margin-top: 90px;
+}
+
+.DADsubheading{
+    color: #40268B;
+}
+
+.LHsubheading{
+    color: #814D00;
+}
+
+#DADchallenges{
+    border: 2px #C1AEF9 solid;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 15px;
+    padding: 8px 40px 16px 40px;
+}
+
+#LHchallenges{
+    border: 2px rgb(255,175,56) solid;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 15px;
+    padding: 8px 40px 16px 40px;
+}
+
+#DADnextsteps{
+    border: 2px #C1AEF9 solid;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 15px;
+    padding: 8px 40px 16px 40px;
+}
+
+#LHnextsteps{
+    border: 2px rgb(255,175,56) solid;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 15px;
+    padding: 8px 40px 16px 40px;
+}
+
 
 /* ----- davis after dark/kalanchoe senior center case study ----- */
 .afterdarkMenu, .seniorMenu{
     display: block;
-    background-color: #c2e1c2;
+    background-color: rgba(193,174,249,0.4);
     margin: -24px;
 }
 
 .afterdarkHeader, .seniorHeader{
     display: block;
     text-align: center;
-    background-color: #c2e1c2;
+    background-color: rgba(193,174,249,0.4);
     margin-left: -24px;
     margin-right: -24px;
 }
@@ -428,14 +625,14 @@ header img{
 /* ----- givemegrub case study ----- */
 .grubMenu{
     display: block;
-    background-color: #7CB1C8;
-    margin: -28px;
+    background-color: rgba(255,175,56,0.4);
+    margin: -27px;
 }
 
 .grubHeader{
     display: block;
     text-align: center;
-    background-color: #7CB1C8;
+    background-color: rgba(255,175,56,0.4);
     margin-left: -24px;
     margin-right: -24px;
 }
@@ -529,7 +726,6 @@ footer h3{
         order: 1;
         margin-left: 0;
         margin-right: 120px;
-
     }
 
     .daphneHeader h1{
@@ -583,6 +779,10 @@ footer h3{
     #work1 img, #work2 img, #work3 img{
         margin-bottom: 0;
         order:1;
+        max-width: 85%;
+        justify-content: center;
+        border-radius: 10px;
+        transition:0.3s ease;
     }
 
     #work1 p, #work2 p, #work3 p{
@@ -594,17 +794,74 @@ footer h3{
         margin-left: 72px;
     }
 
+    #work1{
+        background-color: rgba(193,174,249,0.2);
+        text-decoration: none;
+        color:#2C2C2C;
+        transition:0.3s ease;
+    }
+    
+    #work2{
+        background-color: rgba(255,175,56,0.2);
+        text-decoration: none;
+        color:#2C2C2C;
+        transition:0.3s ease;
+    }
+    
+    #work3{
+        background-color: rgba(133,207,221,0.2);
+        text-decoration: none;
+        color:#2C2C2C;
+        transition:0.3s ease;
+    }
+    
+    #work1:hover{
+        background-color: rgba(193,174,249,0.4);
+    }
+    
+    #work2:hover{
+        background-color: rgba(255,175,56,0.4);
+    }
+    
+    #work3:hover{
+        background-color: rgba(133,207,221,0.4);
+    }
+    
+    #work1 img, #work2 img, #work3 img{
+        -webkit-box-shadow: 0px 0px 15px 3px rgba(32,26,51,0);
+        -moz-box-shadow: 0px 0px 15px 3px rgba(32,26,51,0);
+        box-shadow: 0px 0px 15px 3px rgba(32,26,51,0);
+    }
+
+    #work1:hover img{
+        -webkit-box-shadow: 0px 0px 15px 3px rgba(32,26,51,0.25);
+        -moz-box-shadow: 0px 0px 15px 3px rgba(32,26,51,0.25);
+        box-shadow: 0px 0px 15px 3px rgba(32,26,51,0.25);
+    }
+    
+    #work2:hover img{
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(145,102,37,1);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(145,102,37,1);
+        box-shadow: 0px 0px 15px 0px rgba(145,102,37,1);
+    }
+    
+    #work3:hover img{
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(66,119,129,1);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(66,119,129,1);
+        box-shadow: 0px 0px 15px 0px rgba(66,119,129,1);
+    }
+
 
     /* ----- afterdark ----- */
 
 
     #afterdarkNav, #seniorNav{
-        background-color: #c2e1c2;
+        background-color: rgba(193,174,249,0);
         margin-right: 345px;
     }
 
     #grubNav{
-        background-color: #7CB1C8;
+        background-color: rgba(255,175,56,0);
         margin-right: 345px;
     }
 
@@ -639,8 +896,91 @@ footer h3{
         margin-bottom: 48px;
     }
 
+    .grubDiv img, .seniorDiv img{
+        padding-bottom: 70px;
+    }
+
     .afterdarkStatement, .grubStatement, .seniorStatement{
         margin-top:64px;
+    }
+
+    .caseFlex{
+        display:flex;
+        gap:32px;
+    }
+
+    #DADuserpersonas, #DADmidfiImage, #DADdesignsystem, #DADuserinterviews, #DADcompApps, #DADideation img, #DADresearchpic, #LHuserinterviews, #LHideation img, #LHmidfiImage, #LHcompApps{
+        border-radius: 15px;
+    }
+
+    #DADresearch, #DADdefine, #DADideation, #DADmidfi, #DADhifi, #DADreflection, #LHresearch, #LHideation, #LHmidfi, #LHhifi, #LHreflection{
+        margin-top: 110px;
+    }
+
+    #DADresearchGoals, #LHresearchGoals, #LHlitreview{
+        margin-bottom: 0;
+    }
+
+    .DADhifivideos, .LHhifivideos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 50px;
+    }
+
+    .DADhifivideosSpace, .LHhifivideosSpace{
+        justify-self: flex-end;
+    }
+
+    #DADchatFlex{
+        display: flex;
+    }
+
+    #DADfilterFlex, #LHfilterFlex, #LHprofileFlex{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+    }
+
+    .prototypeText p{
+        text-align: left;
+    }
+
+    #DADhifiChat, #LHhifiChat{
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+        margin-top: 50px;
+    }
+
+    .caseFlex div, #DADsurveyResults div, #LHsurveyResults div{
+        flex: 1;
+    }
+
+    .DADhifivideos video, .DADhifivideos img, .DADhifivideos p, .LHhifivideos video, .LHhifivideos img, .LHhifivideos p{
+        flex: 1;
+    }
+
+    #DADpromptGoal{
+        border: 2px #C1AEF9 solid;
+        padding-left: 24px;
+        padding-right: 24px;
+        border-radius: 15px;
+        padding: 8px 40px 16px 40px;
+    }
+
+    #LHpromptGoal{
+        border: 2px rgb(255,175,56) solid;
+        padding-left: 24px;
+        padding-right: 24px;
+        border-radius: 15px;
+        padding: 8px 40px 16px 40px;
+    }
+
+    #LHgoal{
+        margin-top: 40px;
+    }
+
+    #DADchallenges{
+        margin-bottom: 0;
     }
 
 

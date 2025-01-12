@@ -14,7 +14,7 @@
 
     <link href="style.css" rel="stylesheet">
 
-    <title>Interactive Narrative Project: Portfolio -  Davis After Dark Case Study</title>
+    <title>Davis After Dark</title>
 </head>
 <body>
     <header class="afterdarkMenu">
@@ -35,36 +35,320 @@
         </div>
     </header>
 
-    <div class="afterdarkHeader">
-        <h1>Davis After Dark</h1>
-        <div class="afterdarkDiv">
-            <img src="images/afterdark.png" alt="Davis After Dark mockup">
-            <a href="https://www.figma.com/proto/l4GMMQfGSbJe1icvAimk4h/Davis-Nightlife-Sprint-Workspace?node-id=4588-3483&t=sIC8LterfsmCCJls-1&scaling=scale-down&page-id=3%3A3&starting-point-node-id=4588%3A3483&show-proto-sidebar=1">View Prototype</a>
+    <main id="DADmain">
+        <div class="afterdarkHeader">
+            <h1>Davis After Dark</h1>
+            <div class="afterdarkDiv">
+                <img src="images/afterdark.png" alt="Davis After Dark mockup">
+                <a href="https://www.figma.com/proto/l4GMMQfGSbJe1icvAimk4h/Davis-Nightlife-Sprint-Workspace?node-id=4588-3483&t=sIC8LterfsmCCJls-1&scaling=scale-down&page-id=3%3A3&starting-point-node-id=4588%3A3483&show-proto-sidebar=1">View Prototype</a>
+            </div>
         </div>
-    </div>
 
-    <article class="afterdarkStatement">
-        <p>
-            <b>Challenge Statement:</b><br>
-            Create an app that centralizes information about nightlife events for Davis residents/visitors.
-        </p>
+        <section class="afterdarkStatement">
+            <div class="overview">
+                <div>
+                    <p class="overviewTitles">Role</p>
+                    <p>UI/UX Designer</p>
+                </div>
 
-        <p>
-            <b>Solution Statement:</b><br>
-            Many Davis nightlife goers think it’s difficult to find out about events going on. Davis nightlife goers also have a wide variety of preferences, which fall mainly under either smaller gatherings or larger events. The purpose of this app is to cater to all “types” of preferences, and to also better promote events to those interested. 
-        </p>
-        <p>
-            We wanted to keep personalization a priority, and make sure the users have as much control over their experience as possible. To address that, we added many different filter systems into the app. Users can also add tags to their profile to further personalize their event results. As for the visual design, we made a dark theme with pops of bright color for a “nightlife” feel. 
-        </p>
-    </article>
+                <div>
+                    <p class="overviewTitles">Team</p>
+                    <p>1 PM, 4 Designers</p>
+                </div>
+
+                <div>
+                    <p class="overviewTitles">Timeline</p>
+                    <p>April - June 2024</p>
+                </div>
+
+                <div>
+                    <p class="overviewTitles">Award</p>
+                    <p>Audience Choice</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="DADpromptGoal">
+            <h3>Overview</h3>
+            <p>Davis After Dark was created as a project within Design Interactive’s Spring 2024 Cohort. Design Interactive is a student-run UX organization at UC Davis that is working to give more opportunities in human-centered design to students. Each cohort team was given a prompt and a 6-week time period to finish their project before presenting to a panel of judges</p>
+
+            <div class="caseFlex">
+                <div>
+                    <h3>Prompt</h3>
+                    <p>“Due to a lack of centralized and up-to-date information, students, residents, and visitors often remain unaware of all the social events and opportunities that Davis has to offer after dark.”</p>
+                </div>
+                <div>
+                    <h3>Goal</h3>
+                    <p>Design an app that caters to Davis residents’ varying definitions of nightlife by emphasizing personalization and convenience. </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="subsectionMargins" id="DADresearch">
+            <h2 class="DADsubheading">Research</h2>
+
+            <div class="caseFlex">
+                <div id="DADresearchGoals">
+                    <h3>Research Goals</h3>
+                    <p>We came up with goals to help <b>guide</b> our research.</p>
+                    <ul>
+                        <li>What do Davis residents' consider nightlife?</li>
+                        <li>How do people currently feel about the nightlife scene in Davis?</li>
+                        <li>How do people in Davis usually find out about upcoming events?</li>
+                    </ul>
+                </div>
+                <div id="DADresearchMethods">
+                    <h3>Research Methods</h3>
+                    <ul>
+                        <li>Competitive Analysis</li>
+                        <li>User Survey</li>
+                        <li>User Interviews</li>
+                        <li>User Personas</li>
+                    </ul>
+                </div>
+            </div>
+            <img id='DADresearchpic' src="images/DADresearchpic.png" alt="Davis After Dark research pic">
+            <p><b>Pictured above:</b> Us thinking really hard about our research goals.</p>
+
+            <div class="subsectionMargins">
+                <h3>Competitive Analysis</h3>
+                <p><b>Eventbrite</b> is the most used event app, while <b>Poppin</b> is the most popular in Davis specifically.</p>
+                <img id='DADcompApps' src="images/DADcompanalysis.png" alt="Davis After Dark competitive analysis">
+                <p><b>Key takeaway:</b> Users like to be given options to personalize their experience (with app features and event variety), without being overwhelmed.</p>
+            </div>
+
+            <div class="subsectionMargins">
+                <h3>User Survey</h3>
+                <p>We received <b>61 respondents</b> from <b>Davis residents</b> between the ages of 18 and 60 years of age.</p>
+                <p>Here were our most prominent findings:</p>
+                <div class="caseFlex" id="DADsurveyResults">
+                    <div class="DADsurveyResultsDiv">
+                        <p><b>Rating nightlife in Davis:</b></p>
+                        <p>54% rated it a <b>3 out of 5</b></p>
+                    </div>
+                    <div class="DADsurveyResultsDiv">
+                        <p><b>Finding nightlife events:</b></p>
+                        <p>86% through <b>friends</b></p>
+                        <p>74% through <b>social media</b></p>
+                    </div>
+                    <div class="DADsurveyResultsDiv">
+                        <p><b>Nightlife preferences:</b></p>
+                        <p>88% prefer <b>dinner</b> with friends</p>
+                        <p>26% prefer <b>clubbing</b></p>
+                        <p>20% prefer <b>frat parties</b></p>
+                    </div>
+                </div>
+                <p>These results <b>drastically shifted our goals.</b></p>
+                <p>We went into the project assuming most Davis residents wanted to do “typical” nightlife activities (parties, clubbing), but just didn't have a good place to discover these events. Instead of taking an advertising approach, our research showed that it would be best to cater to the <b>diverse community and range of preferences</b> present in Davis.</p>
+            </div>
+
+            <div class="subsectionMargins">
+                <h3>User Interviews</h3>
+                <p>We conducted user interviews of a wide range of Davis "nightlife goers" to <b>better understanding of our users' needs.</b></p>
+                <img id="DADuserinterviews" src="images/DADuserinterviews.png" alt="Davis After Dark User Interviews">
+                <p><b>Key takeaway:</b> Emphasized the demand for a nightlife app that addresses the various needs in Davis specifically.</p>
+            </div>
+
+            <div class="subsectionMargins">
+                <h3>User Personas</h3>
+                <p>Based on our overall research results, we created <b>two</b> user personas to understand the goals of our potential users.</p>
+                <img id="DADuserpersonas" src="images/DADuserpersonas.png" alt="Davis After Dark User Personas">
+                <p>Micheal represents our more <b>outgoing</b> users that prefer frat parties and DJ events.</p>
+                <p>Nara is a little more <b>introverted</b> and loves smaller outings, but also wants to meet more people at bigger parties.</p>
+            </div>
+
+            <div class="subsectionMargins" id="DADinsights">
+                <h3>Research Insights</h3>
+                <ul>
+                    <li>App users want to <b>personalize their experience</b></li>
+                    <li>There is a <b>wide range</b> of nightlife event preferences</li>
+                    <li>Users want to connect with other <b>people and communities</b> in Davis</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section id="DADdefine">
+            <h2 class="DADsubheading">Define</h2>
+            <p>How might we <b>simplify</b> the process of discovering nightlife events, while also prioritizing the <b>diverse community</b> present in Davis?</p>
+        </section>
+
+        <section id="DADideation">
+            <h2 class="DADsubheading">Ideation</h2>
+            <p>We began making <b>solution sketches</b> to address the pain points we discovered while doing research.</p>
+            <img src="images/DADideation.png" alt="Davis After Dark ideation sketches">
+        </section>
+
+        <section id="DADmidfi">
+            <h2 class="DADsubheading">Mid-fi</h2>
+            <p>We took our sketches and began solidfying our <b>main screens and their features.</b></p>
+            <img id="DADmidfiImage" src="images/DADmidfis.png" alt="Davis After Dark Mid-Fi">
+
+            <div class="subsectionMargins" id="DADmidfiTest">
+                <h3>Mid-fi Usability Testing</h3>
+
+                <div class="caseFlex">
+                    <div id="DADgoodtest">
+                        <p><b>Good</b></p>
+                        <ul>
+                            <li>Filters and tags are great for personalization</li>
+                            <li>User flows are intuitve and easy to navigate</li>
+                        </ul>
+                    </div>
+
+                    <div id="DADbadtest">
+                        <p><b>Constructive</b></p>
+                        <ul>
+                            <li>Add a “See all” option for events on homepage</li>
+                            <li>Switch “heart” icon to “bookmark” to save events, more intuitive</li>
+                            <li>Having a profile bio is unnecessary</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="DADhifi">
+            <h2 class="DADsubheading">Hi-fi & Final Prototypes</h2>
+
+            <div class="subsectionMargins">
+                <h3>Design System</h3>
+                <p>Going into hi-fi, we considered ways we could incorporate more <b>"Davis-like" themes</b> into our app in order to stand out amongst other apps.</p>
+                <img id="DADdesignsystem" src="images/DADdesignsystem.png" alt="Design system">
+                <p>We decided to add <b>characters</b> that are assigned to users based on results from the onboarding quiz! We wanted them to encapsulate Davis culture, and also reflect the two main audiences we found in our research.</p> 
+                <p>The first is <b>DJ Moo-dy</b>, who is outgoing and likes to party, and represents Davis' unofficial cow mascot.<br><b>Cool Cat Cheeto</b> is more laid back and enjoys a chill night with friends. Cheeto is an actual cat that is famous on the UC Davis campus!</p>
+                <p>As for the overall design system, we went with a darker theme with purple as the main accent to give off a <b>nighttime feel.</b></p>
+            </div>
+
+            <div id="DADfinalPrototypes" class="subsectionMargins">
+                <h2>Final Prototypes</h2>
+
+                <div class="DADhifivideos">
+                    <div>
+                        <h4>Onboarding/Personality Quiz</h4>
+                        <ul>
+                            <li>Sign-up and sign-in options</li>
+                            <li>Select preferred tags</li>
+                            <li>Follow businesses and organizations to see their particular events</li>
+                            <li>Assigned character based on personality test results</li>
+                        </ul>
+                    </div>
+                    <div class="DADhifivideosSpace">
+                        <video height="512px" width="288px" autoplay loop muted>
+                            <source src="images/DADquiz.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div id="choosingFilters">
+                    <h4>Choosing Filters</h4>
+                    <div class="DADhifivideosSpace" id="DADfilterFlex">
+                        <div class="prototypeText">
+                            <video height="512px" width="288px" autoplay loop muted>
+                                <source src="images/DADfilter1.mp4" type="video/mp4">
+                            </video>
+                            <p>"For You" page with personalized events</p>
+                            <p>"Explore" page for a more general list of events</p>
+                            <p>Filter by category and tags</p>
+                        </div>
+                        <div class="prototypeText">
+                            <video height="512px" width="288px" autoplay loop muted>
+                                <source src="images/DADfliter2.mp4" type="video/mp4">
+                            </video>
+                            <p>Drop down and calendar view to filter by date</p>
+                        </div>
+                        <div class="prototypeText">
+                            <img id="DADhifiImg1" src="images/DADfilter3.png" alt="Davis After Dark filter" height="512px" width="260px">
+                            <p>General filter button to sort by distance, price, following, and popularity</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="DADhifivideos">
+                    <div>
+                        <h4>Looking at an Event Page</h4>
+                        <ul>
+                            <li>Show event details (date, time, description, host name)</li>
+                            <li>Bookmarked and share with others</li>
+                            <li>RSVP for free events, or purchase tickets</li>
+                        </ul>
+                    </div>
+                    <div class="DADhifivideosSpace">
+                        <video height="512px" width="288px" autoplay loop muted>
+                            <source src="images/DADevent.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="DADhifivideos">
+                    <div>
+                        <h4>Profile</h4>
+                        <ul>
+                            <li>Add and view friends</li>
+                            <li>Add more tags and change visibility of profile</li>
+                            <li>Retake test to get updated character</li>
+                            <li>View favorited and RSVP-ed events</li>
+                        </ul>
+                    </div>
+                    <div class="DADhifivideosSpace">
+                        <video height="512px" width="288px" autoplay loop muted>
+                            <source src="images/DADprofile.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div id="DADhifiChat">
+                    <div id="DADchatText">
+                        <h4>Chat & Adding Friends</h4>
+                        <ul>
+                            <li>Chat with friends</li>
+                            <li>Group chats for organizations and events</li>
+                            <li>Add friends based on mutuals</li>
+                        </ul>
+                    </div>
+                    <div class="DADhifivideosSpace" id="DADchatFlex">
+                        <video height="512px" width="288px" autoplay loop muted>
+                            <source src="images/DADchat2.mp4" type="video/mp4">
+                        </video>
+                        <img id="DADhifiImg2" src="images/DADchat1.png" alt="Davis After Dark chat page" height="512px" width="280px">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subsectionMargins" id="DADreflection">
+            <h2 class="DADsubheading">Reflection</h2>
+            <div class="caseFlex" id="DADconclusion">
+                <div id="DADchallenges">
+                    <h3>Challenges</h3>
+                    <ul>
+                        <li>Creating a unique and effective design system</li>
+                        <li>Defining what "nightlife" is to Davis residents</li>
+                        <li>Navigating Figma tools and creating prototypes</li>
+                        <li>Being intentional with our design choices</li>
+                    </ul>
+                </div>
+
+                <div id="DADnextsteps">
+                    <h3>Next Steps</h3>
+                    <ul>
+                        <li>Expand on our nightlife characters</li>
+                        <li>Introduce more social features, like compatibility calculations</li>
+                        <li>Create flows for creating an event</li>
+                        <li>Conduct another round of usability testing</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
         <footer>
             <h3>Let's connect!</h3>
             <p id="connectIcons">
                 <a href="mailto:&#100;&#103;&#116;&#114;&#097;&#110;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;" class="far fa-envelope"></a>
-                <a href="www.linkedin.com/in/daphne-tran-4b2670184" class="fab fa-linkedin"></a>
+                <a href="https://www.linkedin.com/in/daphne-tran-4b2670184/" class="fab fa-linkedin"></a>
             </p>
             <p id="footerNote">Made with &lt;3 by Daphne</p>
         </footer>
+    </main>
 </body>
 </html>
